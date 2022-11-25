@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NewLoginApp</string>
+    <string-array name="labels_array">
+        <item>Hadir tepat waktu</item>
+        <item>Terlambat</item>
+        <item>Izin</item>
+        <item>Sakit</item>
+    </string-array>
+</resources>

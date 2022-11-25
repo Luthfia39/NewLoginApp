@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Presensi Manual"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/date"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:inputType="date"
+        android:hint="Masukkan tanggal"/>
+    <EditText
+        android:id="@+id/time"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:inputType="time"
+        android:hint="Masukkan waktu"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time"/>
+    <EditText
+        android:id="@+id/desc"
+        android:background="@drawable/background"
+        android:padding="6dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:hint="Keterangan"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_alignParentBottom="true"
+        android:text="Submit" />
+
+</RelativeLayout>
